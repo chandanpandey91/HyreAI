@@ -1,11 +1,12 @@
+import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 
-function DashboardLayout({children}) {
+function Dashboard() {
   return (
-    <div>
-        {children}
+    <div> Dashboard
+        <UserButton/>
     </div>
   )
 }
 
-export default DashboardLayout
+export default Dashboard

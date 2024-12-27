@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function DashboardLayout() {
+function DashboardLayout({ children }) {
   return (
-    <div>Layout</div>
-  )
+    <div>
+      {children}
+    </div>
+  );
 }
 
-export default DashboardLayout
+export default DashboardLayout;
