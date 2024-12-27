@@ -16,7 +16,7 @@ export default function Page() {
           <aside className="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              src="https://cdn.getmidnight.com/13448471d89a9cd8d7f71026a0334ec8/2023/05/AI-trading-bots-best-practices.png"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </aside>
