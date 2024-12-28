@@ -14,9 +14,9 @@ function Header() {
       <Image src="/logo.svg" width={160} height={100} alt="logo" />
       <ul className="flex gap-6">
       <li className={`hover:text-red-500 hover:font-bold transition-all cursor-pointer ${path==='/dashboard'&&'text-red-500 font-bold'}`}>Home</li>
-        <li className='hover:text-red-500 hover:font-bold transition-all cursor-pointer'>About</li>
-        <li className='hover:text-red-500 hover:font-bold transition-all cursor-pointer'>Contact</li>
-        <li className='hover:text-red-500 hover:font-bold transition-all cursor-pointer'>Check your level</li>
+        <li className={`hover:text-red-500 hover:font-bold transition-all cursor-pointer ${path==='/dashboard'&&'text-red-500 font-bold'}`}>About</li>
+        <li className={`hover:text-red-500 hover:font-bold transition-all cursor-pointer ${path==='/dashboard'&&'text-red-500 font-bold'}`}>Contact</li>
+        <li className={`hover:text-red-500 hover:font-bold transition-all cursor-pointer ${path==='/dashboard'&&'text-red-500 font-bold'}`}>Check your level</li>
       </ul>
       <UserButton />
     </div>
