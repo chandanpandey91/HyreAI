@@ -1,5 +1,5 @@
 import React from 'react';
-import AddNewInterview from './AddNewInterview'; // Ensure the path is correct
+import AddNewInterview from './_components/AddNewInterview'; // Ensure the path is correct
 
 function Dashboard() {
   return (
