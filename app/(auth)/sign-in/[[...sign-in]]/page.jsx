@@ -7,13 +7,13 @@ export default function Page() {
         {/* Background Image */}
         <img
           alt="AI Trading Bots"
-          src="https://i.insider.com/62b31453c38f470019c6b507?width=700"
+          src="https://www.shutterstock.com/image-vector/artificial-intelligence-circuit-electric-line-600nw-2465096659.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Overlay Container */}
-        <div className="relative z-10 flex items-center justify-center w-full min-h-screen bg-black/50">
-          <div className="max-w-lg w-full p-8 bg-white rounded-lg shadow-lg">
+        {/* Form Container directly on background */}
+        <div className="relative z-10 flex items-center justify-center w-full min-h-screen">
+          <div className="max-w-lg w-full p-8 bg-white rounded-lg">
             {/* Logo */}
             <div className="mb-6 text-center">
               <a className="text-blue-600 font-bold text-2xl" href="#">
@@ -22,9 +22,6 @@ export default function Page() {
             </div>
 
             {/* Heading */}
-            {/* <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl md:text-5xl text-center">
-              Welcome to HyreAI
-            </h1> */}
             <p className="mt-4 text-lg leading-relaxed text-gray-600 text-center">
               Sign in to access your AI-powered hiring tools.
             </p>
