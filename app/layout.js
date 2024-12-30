@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import Head from "next/head"; // Import Head for metadata
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,13 +21,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <Head>
+          {/* Favicon links */}
+          <link rel="icon" href="/logo.jpg" type="image/jpg" />
+          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+          <link rel="apple-touch-icon" href="/logo.jpg" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <title>{metadata.title}</title>
+          <meta name="description" content={metadata.description} />
+        </Head>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
