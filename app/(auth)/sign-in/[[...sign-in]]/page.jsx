@@ -21,10 +21,10 @@ export default function Page() {
               </a>
             </div>
 
-            {/* Heading */}
+            {/* Heading
             <p className="mt-4 text-lg leading-relaxed text-white text-center">
               Sign in to access your AI-powered hiring tools.
-            </p>
+            </p> */}
 
             {/* SignIn Component */}
             <div className="mt-10 flex items-center justify-center">
