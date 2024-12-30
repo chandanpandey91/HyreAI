@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", // Add this line to define the base directory
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"] // Map "@/..." to the "src" directory
+      "@/*": ["src/*"]
     }
   }
 }
