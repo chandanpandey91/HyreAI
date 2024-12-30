@@ -11,9 +11,9 @@ export default function Page() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Form Container directly on background */}
+        {/* Form Container directly on background with transparency and blur */}
         <div className="relative z-10 flex items-center justify-center w-full min-h-screen">
-          <div className="max-w-lg w-full p-8 bg-white rounded-lg">
+          <div className="max-w-lg w-full p-8 bg-white bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg">
             {/* Logo */}
             <div className="mb-6 text-center">
               <a className="text-blue-600 font-bold text-2xl" href="#">
@@ -22,7 +22,7 @@ export default function Page() {
             </div>
 
             {/* Heading */}
-            <p className="mt-4 text-lg leading-relaxed text-gray-600 text-center">
+            <p className="mt-4 text-lg leading-relaxed text-white text-center">
               Sign in to access your AI-powered hiring tools.
             </p>
 
