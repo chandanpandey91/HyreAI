@@ -16,7 +16,7 @@ export default function Page() {
           <div className="max-w-lg w-full p-8 bg-white bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg">
             {/* Logo */}
             <div className="mb-6 text-center">
-              <a className="text-blue-600 font-bold text-2xl" href="#">
+              <a className="text-red-600 font-bold text-2xl" href="#">
                 HyreAI
               </a>
             </div>
