@@ -23,7 +23,6 @@ export default function Home() {
           <button className="px-6 py-3 bg-yellow-400 text-black rounded-lg shadow-md hover:bg-yellow-500 transition">
             <a
               href="https://hyreai.vercel.app/dashboard"
-              target="_blank"
               rel="noopener noreferrer"
             >
               Visit Our Website
