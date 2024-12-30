@@ -7,7 +7,7 @@ export default function Page() {
         {/* Background Image */}
         <img
           alt="AI Trading Bots"
-          src="https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-8392.jpg?semt=ais_hybrid"
+          src="https://i.insider.com/62b31453c38f470019c6b507?width=700"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
