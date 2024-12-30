@@ -25,11 +25,13 @@ function AddNewInterview() {
             left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg"
           >
             <Dialog.Title className="text-lg font-bold">
-              Are you absolutely sure?
+            Tell us more about Job you are interviewing
             </Dialog.Title>
             <Dialog.Description className="text-sm text-gray-500">
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+              <div>
+                <h2 className="font-bold text-2xl"></h2>
+                <h2>Add details about your job position/role, Job Description and years of experience</h2>
+              </div>
             </Dialog.Description>
             <div className="mt-4 flex justify-end space-x-2">
               <button
