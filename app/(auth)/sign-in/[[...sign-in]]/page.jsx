@@ -22,9 +22,9 @@ export default function Page() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl md:text-5xl text-center">
+            {/* <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl md:text-5xl text-center">
               Welcome to HyreAI
-            </h1>
+            </h1> */}
             <p className="mt-4 text-lg leading-relaxed text-gray-600 text-center">
               Sign in to access your AI-powered hiring tools.
             </p>
