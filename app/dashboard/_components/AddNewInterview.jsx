@@ -7,6 +7,9 @@ function AddNewInterview() {
   const [jobRole, setJobRole] = useState('');
   const [jobDescription, setJobDescription] = useState('');
   const [experience, setExperience] = useState('');
+  const onSubmit=(e)=>{
+    e.preventDefault();
+  }
 
   const handleConfirm = () => {
     // Handle submission logic here
@@ -15,6 +18,7 @@ function AddNewInterview() {
     console.log('Experience:', experience);
     setOpenDialog(false); // Close the dialog after submission
   };
+  
 
   return (
     <div>
@@ -39,6 +43,7 @@ function AddNewInterview() {
               Tell us more about the job you're interviewing.
             </Dialog.Title>
             <Dialog.Description className="text-sm text-gray-700 mb-4 text-center">
+              <form onSubmit={onSubmit}>
               Please provide details about the job role and experience required.
             </Dialog.Description>
 
