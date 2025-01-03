@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
+import { ChatSession } from "@google/generative-ai";
 
 function AddNewInterview() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -12,35 +13,18 @@ function AddNewInterview() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    const payload = {
-      jobRole,
-      jobDescription,
-      experience: parseInt(experience, 10),
-    };
+    // Correct variable names
+    console.log(jobRole, jobDescription, experience);
 
-    try {
-      const response = await fetch("/api/generate-questions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+    const InputPrompt = `Job position: ${jobRole}, Job Description: ${jobDescription}, Years of Experience: ${experience}. Based on this information, please provide ${process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT} interview questions with answers in JSON format. Include questions and answers as fields in the JSON.`;
 
-      if (response.ok) {
-        const data = await response.json();
-        setQuestions(data.questions); // Save generated questions
-        setOpenDialog(false); // Close dialog
-      } else {
-        console.error("Failed to generate questions:", await response.text());
-      }
-    } catch (error) {
-      console.error("Error while generating questions:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Sending the message to the ChatSession
+    const result = await ChatSession.sendMessage(InputPrompt);
+    console.log(result.response.text());
+
+    // You may want to store the generated questions in state
+    // setQuestions(result.response.text());
   };
 
   return (
